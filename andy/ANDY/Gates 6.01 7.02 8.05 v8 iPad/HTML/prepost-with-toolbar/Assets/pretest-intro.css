@@ -1,0 +1,40 @@
+html, body {
+  margin: 0px;
+/*  font-family: Verdana, Arial, Helvetica, sans-serif;  */
+  font-family: sans-serif; 
+  font-size: 20px;
+}
+
+.background{
+  max-width: 750px; 
+  margin: auto; /* defines the space outside around the element, auto will center both horizontally and vertically */
+  padding: 50px;
+}
+
+/*.CTATDoneButton {
+        float: right;
+        height: 57px;
+        width: 57px;
+        margin-top: 50px;
+        padding: 20px;
+}*/
+
+.CTAT-done-button--icon {
+  position: relative;
+  top: -5px;
+  height: 0%;
+  pointer-events: none;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0px;
+  font-weight: bold;
+}
+
+
+.CTATDoneButton {
+  float: right;
+  height: 27px;
+  width: 60px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+

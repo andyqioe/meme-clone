@@ -1,0 +1,99 @@
+<html lang="en-US">
+  <head>
+    <title>Tutor</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.ctat.cs.cmu.edu/releases/alpha/CTAT.css">
+    <link rel="stylesheet" type="text/css" href="Assets/601-opt-IS.css">
+    <link rel="stylesheet" type="text/css" href="Assets/ipad.css">
+    <style type="text/css">
+      @media only screen and (orientation: portrait){
+          .background{
+            margin-top: 0px;
+          }
+          .CTATTools{
+            margin-top: 0em;
+          }
+          table{
+            border-spacing: 20px 15px; 
+          }
+      }
+    </style>
+
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery.min.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery-ui.min.js"></script>    
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/ctatloader.js"></script>
+    <script type="text/javascript" src="Assets/languagepack.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/trunk/ctat.min.js"></script>
+    
+    <style type="text/css">
+        #IS-intro-text{visibility:hidden;}
+        #cal-y-giv-x-text{visibility:hidden;}
+        #cal-y-giv-x-input{visibility:hidden;} 
+      /*  #enter-formula-revisit-text-no-syw{visibility:hidden;}
+        #enter-formula-revisit-input-no-syw{visibility:hidden;}
+        #show-your-work-text{visibility:hidden;}
+        #show-your-work-input{visibility:hidden;}*/
+        #IS-flex-step-2-text{visibility:hidden;}
+        #IS-flex-step-2-input{visibility:hidden;}
+        #enter-formula-revisit-text{visibility:hidden;}
+        #enter-formula-revisit-input{visibility:hidden;}
+    </style>
+  </head>
+
+  <body>
+    <main class="CTATTutor">
+      <h1>Tutor</h1>
+
+      <section class="CTATProblemSolving">
+        <h2>Problem Solving</h2>
+
+        <section class="CTATProblem">
+          <h3>Problem</h3>
+          <div class="background">
+            <table>
+              <tr><td colspan="2"><div class="CTATTextField" id="main-text"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-text"></div></td><td><div class="CTATTextInput" id="enter-formula-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="IS-intro-text"></div></td><td></td></tr>
+              <tr><td><div class="CTATTextField" id="cal-y-giv-x-text"></div></td><td><div class="CTATTextInput" id="cal-y-giv-x-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="IS-flex-step-2-text"></div></td><td><div class="CTATTextInput" id="IS-flex-step-2-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-revisit-text"></div></td><td><div class="CTATTextInput" id="enter-formula-revisit-input"></div></td></tr>
+            </table>
+           <!--  <table>
+              <tr><td colspan="2"><div class="CTATTextField" id="main-text"></div><td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-text"></div></td><td><div class="CTATTextInput" id="enter-formula-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="IS-intro-text"></div></td><td></td></tr>
+              <tr><td><div class="CTATTextField" id="cal-y-giv-x-text"></div></td><td><div class="CTATTextInput" id="cal-y-giv-x-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="show-your-work-text"></div></td><td><div class="CTATTextInput" id="show-your-work-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-revisit-text"></div></td><td><div class="CTATTextInput" id="enter-formula-revisit-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-revisit-text-no-syw"></div></td><td><div class="CTATTextInput" id="enter-formula-revisit-input-no-syw"></div></td></tr>
+            </table> -->
+          </div>
+        </section>
+
+   <!--      <section id="solution" class="CTATSolution">
+          <h3>Solution</h3>
+       </section> -->
+      </section>
+
+      <section class="CTATTools">
+        <h2>Tools</h2>
+
+        <section class="CTATHints">
+          <h3>Hints</h3>
+          <div class="CTATButtons">
+            <div class="CTATHintButton"></div>
+          </div>
+          <div class="CTATHintWindow"></div>
+        </section>
+
+        <section class="CTATSkills">
+          <h3>Skills</h3>
+          <div class="CTATSkillWindow"></div>
+          <div class="CTATButtons">
+            <div class="CTATDoneButton"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+/**
+Place all your tutor specific CSS in this file
+All global CTAT tutor CSS definitions can be found in CTAT.css
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+html, body {
+  margin: 0px;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+body{
+  
+}
+h1, h2 {
+  display: none;
+}
+h4 {
+  margin: 0;
+  font-size: 15px;
+}
+h5 {
+  margin: 0;
+  font-size: 13px;
+}
+p {
+  margin: 0;
+  font-size: 11px;
+  font-style: italic;
+}
+
+table thead {
+  border-collapse: collapse;
+  background-color:rgb(170,176,255);
+  color:rgb(255,255,255);
+  text-align: left;
+  border:black;
+  font-style: bold;
+  font-size: 16
+
+}
+
+table {
+  
+  border-radius: 25px;
+  background-color:rgb(228, 232, 255);
+  border-spacing: 0px;
+  table-layout: fixed;
+  width: 790px; /* Changed from 420px; width * 4 */
+  height: 350px;
+  text-align: center;
+  font: inherit;
+
+}
+
+table tr:nth-of-type(even) {
+  background-color:rgb(212, 219, 253);
+}
+
+table tr:last-child {
+  border-collapse: separate !important;
+  border-radius: 0px 25px 0px 0px;
+}
+thead td {
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 0px;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+thead th:last-child {
+  border-radius: 0px 25px 0px 0px;
+}
+th {
+  
+  background-color:rgb(198, 201, 240);
+  color:white;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.CTATTutor {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  /*max-height: 600px; */
+  min-width: 600px;
+  /*max-width: 900px;*/
+}
+.CTATProblem, .CTATSolution, .CTATTools section {
+  border: none;
+  flex: 1;
+}
+.CTATTools section {
+  display: flex;
+}
+.CTATTools {
+  
+  padding: 1px;
+  height: 144px;
+}
+.CTATHintWindow, .CTATSkillWindow {
+  /*flex: auto;*/
+  margin: 2px;
+}
+.CTATSkillWindow--bar--nonmastered {
+  background: gold;
+}
+.CTATSkillWindow--bar--mastery {
+  background: #690;
+}
+.CTATButtons {
+  margin: 2px;
+}
+button.CTAT-done-button {
+  background-color: #8c4;
+  border-color: green;
+}
+.CTAT-hint-button--icon, .CTAT-done-button--icon {
+  top: -5px;
+  pointer-events: none;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  margin-top:auto;
+}
+
+/* ========================= Added by Yun =====================*/
+html, body {
+  font-size: 14px;
+}
+.CTATTools{
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height:auto;
+  width:532px;
+}
+
+.CTATTutor{
+  display:flex;
+  flex-direction:row;
+  min-height: 927px;
+  max-height: 927px; 
+  min-width: 1500px;
+  max-width: 1500px;
+  background: rgb(170,176,255);
+  background: linear-gradient(45deg, rgba(170,176,255,1) 46%, rgba(238,205,151,1) 100%);
+  border-radius: 25px;
+  margin: 0 auto; margin-top:;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+}
+
+.CTATProblemSolving{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex:1 1 auto;
+  align-items: flex-start;
+  width:927px;
+  height:927px;
+  
+  background:white;
+  /*border-color:grey;*/
+  /*border-style: solid;
+  border-width: .5px;*/
+  border-radius: 25px 0px 0px 25px;
+  /*margin-right:130;*/
+  /*opacity:70%;*/
+  
+}
+
+.CTATProblem {
+  margin-left:5%;
+  margin-top:2%;
+  min-width: 350px; /* necessary for achieving wrap */
+  max-width: 820; /* controls not to have to many words in one line after wrapping. changed from 600px to 720px for iPad */
+}
+
+.CTATSolution{
+  margin-left:5%;
+  display: flex; 
+  justify-content: space-around;
+  flex-direction: column;
+  width:800;
+  margin-bottom:30;
+  border-radius:25px;
+}
+.CTATTextInput {
+  height: 35px; 
+  width: 190px; 
+  padding: -12px; 
+  border: 0px; 
+  margin: 0px; 
+}
+.CTATTextField{
+  padding: 1px; 
+}
+.CTATTextInput > input{
+  padding: 3px;
+  border: 1px; /* This is why the border line disappear (border-width doesn't seem to affect). 1px here is smaller than default */
+  border-width: 1px;
+  text-align: center;
+  border-color:#cce3d0;
+  border-radius:5px;
+}
+.Tab {
+   margin-bottom: 1em;
+}
+.TabSmall {
+   margin-bottom: 0.5em;
+}
+
+
+.CTATSkillWindow--bar { 
+  width: 20%; 
+}
+.CTATDoneButton {
+  height: 55px; width:55px;
+  margin-left:-140;
+	margin-top:-60;
+}
+.CTAT-hint-button--icon, .CTAT-done-button--icon {
+  top: -2px; 
+  font-size: 20px; 
+}
+
+#hintbutton {
+  margin-bottom: -56;
+}
+.CTATHintButton {
+  justify-content:left;
+  font: 15px Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 25px; width:25px;
+  margin-top:11px;
+  margin-left:50px;
+
+  /*border-radius: 0px 0px 5px 0px;*/
+  
+}
+
+.CTATHints{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top:-85px;
+  /*margin-top: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);
+  border-radius: 25px;
+  padding:50px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  width:330px;*/
+}
+/*#ctatdiv6 {
+  margin-bottom: 100;
+}*/
+
+.CTATSkills{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top:30;
+  width:330px;
+  /*background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.13);
+  border-radius: 25px;
+  padding:50px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  width:330px;*/
+}
+div:not([class]):not([id]){
+ visibility:hidden;
+}
+#hints{
+  margin-top:60px;
+  margin-bottom:-100px;
+  margin-left:2;
+  z-index:2;
+}
+#tutor{
+  margin-left:-50;
+  margin-top:-50;
+}
+#skills{
+  margin-bottom:-47;
+  margin-left:2;
+  z-index:2;
+}
+#ctatdiv12{
+  overflow:auto;
+}
+.message{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding:50px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+  width:330px;
+}
+
+.message #OLMcumulative{
+  color:red;
+} 
+
+.message #OLM{
+  margin-bottom:-30;
+  margin-top: 25;
+  color:#FDD805;
+}  

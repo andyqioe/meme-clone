@@ -1,0 +1,161 @@
+/**
+Place all your tutor specific CSS in this file
+All global CTAT tutor CSS definitions can be found in CTAT.css
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+html, body {
+  margin: 0px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+h1, h2, h3 {
+  display: none;
+}
+h4 {
+  margin: 0;
+  font-size: 14px;
+}
+h5 {
+  margin: 0;
+  font-size: 13px;
+}
+p {
+  margin: 0;
+  font-size: 11px;
+  font-style: italic;
+}
+.CTATTutor {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  /*max-height: 600px; */
+  min-width: 600px;
+  /*max-width: 900px;*/
+}
+.CTATProblem, .CTATSolution, .CTATTools section {
+  border: none;
+  flex: 1;
+}
+.CTATTools section {
+  display: flex;
+}
+/*#CTATProblemStatement {
+  margin-top: 4px; 
+} Yun*/
+.CTATTools {
+  padding: 1px;
+  height: 144px;
+}
+.CTATHintWindow, .CTATSkillWindow {
+  flex: auto;
+  margin: 2px;
+}
+.CTATSkillWindow--bar--nonmastered {
+  background: gold;
+}
+.CTATSkillWindow--bar--mastery {
+  background: #690;
+}
+.CTATButtons {
+  margin: 2px;
+}
+button.CTAT-done-button {
+  background-color: #8c4;
+  border-color: green;
+}
+.CTAT-hint-button--icon, .CTAT-done-button--icon {
+  position: relative;
+  top: -5px;
+  height: 60%;
+  pointer-events: none;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+/* ====================  Added by Yun ==================== */
+html, body {
+  font-size: 15px;
+}
+.Tab {
+   margin-bottom: 1em
+}
+.TabSmall {
+   margin-bottom: 0.5em
+}
+.CTATSkillWindow--bar { 
+  width: 20%; 
+}
+.CTATDoneButton, .CTATHintButton{
+  height: 55px; 
+  width: 55px;
+}
+.CTAT-hint-button--icon, .CTAT-done-button--icon {
+  top: -2px; 
+  font-size: 35px; 
+}
+select.CTAT--correct {
+  outline: 1.5px solid limegreen;
+}
+select.CTAT--incorrect {
+  outline: 1.5px solid red;
+}
+select.CTAT--hint {
+  outline: 1.5px solid yellow;
+}
+
+/* Below is the actively editing part */
+.CTATProblemSolving{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.CTATProblem {
+  min-width: 180px; /* necessary for achieving wrap */
+  max-width: 720px; /* controls not to have to many words in one line after wrapping */
+  padding: 5px;
+  padding-right: 10px; /* add this for readability, after I set table border-spacing: 0px 5px; */
+}
+/* The justify-content: space-around in .CTATProblemSolving doesn't apply to this level. Need the following to center text after wrapping */
+.CTATSolution{
+  display: flex; 
+  justify-content: space-around;
+  padding: 0px; /* table already has border-spacing on y */
+  padding-left: 5px; /* table has 0 x border-spacing, but we need to give some */
+ /* flex-grow: 3;  has to remove, otherwise, the interface for P30 doesn't look right */
+}
+/* The max-width is necessary for the shrinked block layout when there is long instruction, otherwise, the instru. will take up the whole screen width and won't center; 
+   however, then in the original in-line layout, when there is long description, the table will use the max-width rather than applying flex and overflow over the CTATSolution and CTATProblemSolving divs.
+   Currently, the hack I use is to set max-width for the instruction text. But I am still not sure 100% it won't cause the overflow problem. The width of .CTATSolution div is determined by the width of the .CTATTextInput and combobox div (plus some distribution of space), not by the max-width of problem_instructions. I checked that even when .CTATTextInput+combobox is shorter than max-width of problem_instructions (e.g., 620px), the width of .CTATSolution is still smaller than max-width (e.g., 607px) 
+*/
+#problem_instructions {
+   max-width: 720px; /* same as .CTATProblem padding, not sure this matters */
+}
+.CTATTextInput > input{
+  padding: 2px;
+}
+.CTATComboBox > select {
+  font-size: 13px; /* necessary for 805-15paycheck to fit in portrait mode, in 702.html, modify to 14px */
+}
+/* Following about option not working
+.CTATComboBox > select option{
+  font-size: 13px;
+}
+option {
+  font-size: 13px;
+} */
+table {
+  border-spacing: 0px 5px; /* set 0px to fit iPad portrait model 805-30record */
+  font: inherit;
+  text-align: left;
+}
+.CTATTextInput {
+/*  height: 30px; */
+  width: 135px; /* can't be smaller for iPad 805 06carpet 08sufboard */
+  font-size: 14px; /* smaller font size to fit iPad portrait model 805-30record */
+  padding: 0px;
+  border: 0px;
+}
+
+

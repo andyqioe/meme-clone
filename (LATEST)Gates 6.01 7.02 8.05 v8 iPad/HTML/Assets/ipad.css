@@ -1,0 +1,27 @@
+@media only screen and (orientation: portrait){
+	.CTATTutor{
+		display: block;
+	}
+	.CTATTools{
+		margin-top: 1em;
+		height: 164px;
+	}
+	.CTATButtons, .CTATHintWindow, .CTATSkillWindow{
+		height: 160px;
+	}
+	.CTATHintWindow{
+		font-size: 15px;
+	}
+}
+/*Below is not working
+.CTATSkillWindow{
+	overflow-x: auto; 
+}*/
+.CTAT-done-button--icon{
+	font-size: 30px;
+	top: 0px;
+}
+textarea.CTAT--correct, input.CTAT--correct[type="text"] {
+  color: darkgreen; /* limegreen is the original one */
+}
+

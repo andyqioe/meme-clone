@@ -1,0 +1,18 @@
+@media only screen and (orientation: landscape){
+	.CTATTextInput {
+		width: 140px;
+		font-size: 14px;
+	}
+	table {
+		width: 980px; /*140*7*/
+		font-size: 14px;
+	}
+	th {
+		height: 45px;
+	}
+	.EqInput {
+  		width: 220px;
+	}
+}
+
+

@@ -1,0 +1,87 @@
+<html lang="en-US">
+  <head>
+    <title>Tutor</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.ctat.cs.cmu.edu/releases/alpha/CTAT.css">
+    <link rel="stylesheet" type="text/css" href="Assets/jumble.css">
+
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery.min.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery-ui.min.js"></script>    
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/ctatloader.js"></script>
+    <script type="text/javascript" src="Assets/languagepack.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/trunk/ctat.min.js"></script>
+    
+    <style type="text/css">
+        #cal-y-giv-x-text{visibility:hidden;}
+        #cal-y-giv-x-input{visibility:hidden;} 
+        #IS-flex-step-2-text{visibility:hidden;}
+        #IS-flex-step-2-input{visibility:hidden;}
+        #enter-formula-revisit-text{visibility:hidden;}
+        #enter-formula-revisit-input{visibility:hidden;}
+    </style>
+<!--             #IS-intro-text{visibility:hidden;}-->  
+</head>
+
+  <body>
+    <main class="CTATTutor">
+      <h1>Tutor</h1>
+
+      <section class="CTATProblemSolving">
+        <h2>Problem Solving</h2>
+
+        <section class="CTATProblem">
+          <h3>Problem</h3>
+<!--           <div class="background">
+ -->           <!--  <table>
+              <tr><td colspan="2"><div class="CTATTextField" id="main-text">Brady's Little League team is ranked first in the city, with a total of 25 points right now. For every additional game they win by the end of the season, the team will get another 5 points.</div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-text">If they win t additional games, what is their total number of points? Write an expression for the total number of points in terms of t.</div></td><td><div class="CTATTextInput" id="enter-formula-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="IS-intro-text"></div></td><td></td></tr>
+              <tr><td><div class="CTATTextField" id="cal-y-giv-x-text"></div></td><td><div class="CTATTextInput" id="cal-y-giv-x-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="IS-flex-step-2-text"></div></td><td><div class="CTATTextInput" id="IS-flex-step-2-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-revisit-text"></div></td><td><div class="CTATTextInput" id="enter-formula-revisit-input"></div></td></tr>
+            </table> -->
+        <div class="background">
+            <table>
+              <tr><td colspan="2"><div class="CTATTextField" id="main-text">Brady's Little League team is ranked first in the city, with a total of 25 points right now. For every additional game they win by the end of the season, the team will get another 5 points.</div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-text">If they win t additional games, what is their total number of points? Write an expression for the total number of points in terms of t.</div></td><td><div class="CTATTextInput" id="enter-formula-input"></div></td></tr>
+              <tr><td colspan="2"><div class="CTATTextField" id="IS-intro-text">Let's break it down! What do you plan to get to write the expression? Please order the following expression descriptions. </div></td></tr>
+              <tr><td colspan="2">
+                <div id="jumble2" class="CTATJumble" data-ctat-tutor="false">
+                  <div id="jumble2-word1" class="CTATTextField" data-ctat-tutor="false">Total number of points given additional wins</div>
+                  <div id="jumble2-word2" class="CTATTextField" data-ctat-tutor="false">Total number of points given additional points earned</div>
+                  <div id="jumble2-word3" class="CTATTextField" data-ctat-tutor="false">Additional points earned from additional wins</div>
+                </div></td></tr>
+              <tr><td></td><td><div id="jumble2_submit" class="CTATSubmitButton" data-ctat-target="jumble2">Submit</div></td></tr>
+            </table>
+            <!-- <div id="jumble2" class="CTATJumble" data-ctat-tutor="false">
+              <div id="jumble2-word1" class="CTATTextField" data-ctat-tutor="false">Total number of points given additional wins</div>
+              <div id="jumble2-word2" class="CTATTextField" data-ctat-tutor="false">Total number of points given additional points earned</div>
+              <div id="jumble2-word3" class="CTATTextField" data-ctat-tutor="false">Additional points earned from additional wins</div>
+            </div>
+            <div id="jumble2_submit" class="CTATSubmitButton" data-ctat-target="jumble2">Submit Jumble</div> -->
+        </div>
+        </section>
+      </section>
+
+      <section class="CTATTools">
+        <h2>Tools</h2>
+
+        <section class="CTATHints">
+          <h3>Hints</h3>
+          <div class="CTATButtons">
+            <div class="CTATHintButton"></div>
+          </div>
+          <div class="CTATHintWindow"></div>
+        </section>
+
+        <section class="CTATSkills">
+          <h3>Skills</h3>
+          <div class="CTATSkillWindow"></div>
+          <div class="CTATButtons">
+            <div class="CTATDoneButton"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<html lang="en-US">
+  <head>
+    <title>Tutor</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.ctat.cs.cmu.edu/releases/alpha/CTAT.css">
+    <link rel="stylesheet" type="text/css" href="Assets/601-table-template2.css">
+    <link rel="stylesheet" type="text/css" href="Assets/prepost.css">
+
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery.min.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery-ui.min.js"></script>    
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/ctatloader.js"></script>
+    <script type="text/javascript" src="Assets/languagepack.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/trunk/ctat.min.js"></script>
+  </head>
+
+  <body>
+    <main class="CTATTutor">
+      <h1>Tutor</h1>
+
+      <section class="CTATProblemSolving">
+        <h2>Problem Solving</h2>
+
+        <section class="CTATProblem">
+          <h3>Problem</h3>
+          <div class="CTATTextField" id="textone"></div>
+          <div class="Tab"></div>
+        </section>
+
+        <section id="solution" class="CTATSolution">
+          <h3>Solution</h3>
+          <!-- <div class="background"> -->
+           <table>
+              <tr>
+                <td></td>
+                <th><div class="CTATTextField" id="nameleft"></div></th>
+                <th><div class="CTATTextField" id="namemid"></div></th>
+                <th><div class="CTATTextField" id="nameright">Show your work</div></th>
+              </tr>
+              <tr>
+                <td><div class="CTATTextField" id="unitname">Unit</div></td>
+                <td><div class="CTATTextField" id="unitleft"></div></td>
+                <td><div class="CTATTextField" id="unitmid"></div></td>
+                <td><div class="CTATTextField" id="unitright"></div></td>
+              </tr>
+              <tr>
+                <td><div class="CTATTextField" id="firstname">(1)</div></td>
+                <td><div class="CTATTextInput" id="firstleft"></div></td>
+                <td><div class="CTATTextInput" id="firstmid"></div></td>
+                <td><div class="CTATTextInput" id="firstright"></div></td>
+              </tr>
+              <tr>
+                <td><div class="CTATTextField" id="secondname">(2)</div></td>
+                <td><div class="CTATTextInput" id="secondleft"></div></td>
+                <td><div class="CTATTextInput" id="secondmid"></div></td>
+                <td><div class="CTATTextInput" id="secondright"></div></td>
+              </tr>
+              <tr>
+                <td><div class="CTATTextField" id="thirdname">Expression</div></td>
+                <td><div class="CTATTextInput" id="thirdleft"></div></td>
+                <td><div class="CTATTextInput" id="thirdmid"></div></td>
+                <td><div class="CTATTextInput" id="thirdright"></div></td>
+              </tr>
+              <tr>
+                <td><div class="CTATTextField" id="fourthname">(3)</div></td>
+                <td><div class="CTATTextInput" id="fourthleft"></div></td>
+                <td><div class="CTATTextInput" id="fourthmid"></div></td>
+                <td><div class="CTATTextInput" id="fourthright"></div></td>
+              </tr>
+              <tr>
+                <td><div class="CTATTextField" id="fifthname">(4)</div></td>
+                <td><div class="CTATTextInput" id="fifthleft"></div></td>
+                <td><div class="CTATTextInput" id="fifthmid"></div></td>
+                <td><div class="CTATTextInput" id="fifthright"></div></td>
+              </tr>
+            </table>
+        </section> <!-- ends: CTATSolution -->
+      </section> <!-- ends: CTATProblemSolving -->
+
+      <div class="CTATDoneButton PrepostDone"></div>  <!-- within CTATTutor -->
+
+<!--       <section class="CTATTools">
+        <h2>Tools</h2> -->
+
+       <!--  <section class="CTATHints">
+          <h3>Hints</h3>
+          <div class="CTATButtons">
+            <div class="CTATHintButton"></div>
+          </div>
+          <div class="CTATHintWindow"></div>
+        </section> -->
+
+        <!-- <section class="CTATSkills">
+          <h3>Skills</h3>
+          <div class="CTATSkillWindow"></div> -->
+          <!-- <div class="CTATButtons"> -->
+           <!-- <div class="CTATDoneButton PrepostDone"></div> -->
+          <!-- </div> -->
+        <!-- </section> -->
+<!--       </section> -->
+    </main>
+  </body>
+</html>

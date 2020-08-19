@@ -1,0 +1,72 @@
+<html lang="en-US">
+  <head>
+    <title>Tutor</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.ctat.cs.cmu.edu/releases/alpha/CTAT.css">
+    <link rel="stylesheet" type="text/css" href="Assets/601-opt-CS.css">
+    <link rel="stylesheet" type="text/css" href="Assets/ipad.css">
+
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery.min.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/jquery-ui.min.js"></script>    
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/alpha/ctatloader.js"></script>
+    <script type="text/javascript" src="Assets/languagepack.js"></script>
+    <script src="https://cdn.ctat.cs.cmu.edu/releases/trunk/ctat.min.js"></script>
+
+    <style type="text/css">
+        #CS-intro-text{visibility:hidden;}
+        #CS-step-1-text{visibility:hidden;}
+        #CS-step-1-input{visibility:hidden;}
+        #CS-step-2-text{visibility:hidden;}
+        #CS-step-2-input{visibility:hidden;}
+        #CS-step-3-text{visibility:hidden;}
+        #CS-step-3-input{visibility:hidden;}
+        #CS-step-4-text{visibility:hidden;}
+        #CS-step-4-input{visibility:hidden;}
+    </style>
+  </head>
+
+  <body>
+    <main class="CTATTutor">
+      <h1>Tutor</h1>
+
+      <section class="CTATProblemSolving">
+        <h2>Problem Solving</h2>
+
+        <section class="CTATProblem">
+          <h3>Problem</h3>
+          <div class="background">
+          <table>
+              <tr><td colspan="2"><div class="CTATTextField" id="main-text"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="enter-formula-text"></div></td><td><div class="CTATTextInput" id="enter-formula-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="CS-intro-text"></div></td><td></td></tr>
+              <tr><td><div class="CTATTextField" id="CS-step-1-text"></div></td><td><div class="CTATTextInput" id="CS-step-1-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="CS-step-2-text"></div></td><td><div class="CTATTextInput" id="CS-step-2-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="CS-step-3-text"></div></td><td><div class="CTATTextInput" id="CS-step-3-input"></div></td></tr>
+              <tr><td><div class="CTATTextField" id="CS-step-4-text"></div></td><td><div class="CTATTextInput" id="CS-step-4-input"></div></td></tr>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section class="CTATTools">
+        <h2>Tools</h2>
+
+        <section class="CTATHints">
+          <h3>Hints</h3>
+          <div class="CTATButtons">
+            <div class="CTATHintButton"></div>
+          </div>
+          <div class="CTATHintWindow"></div>
+        </section>
+
+        <section class="CTATSkills">
+          <h3>Skills</h3>
+          <div class="CTATSkillWindow"></div>
+          <div class="CTATButtons">
+            <div class="CTATDoneButton"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

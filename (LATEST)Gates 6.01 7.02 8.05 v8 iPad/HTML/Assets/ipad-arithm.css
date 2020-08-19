@@ -1,0 +1,15 @@
+@media only screen and (orientation: portrait){
+	.background{
+		max-width: 728px;
+		padding: 0px;
+		margin-top: 20px;
+		margin-left: 60px; /* for aritm-2op, need to reduce due to table border-spacing */
+		margin-right: 60px; /* for aritm-2op, need to reduce due to table border-spacing */
+		margin-bottom: 0px;
+	}
+	.CTATTools{
+		margin-top: 1.5em;
+	}
+}
+
+

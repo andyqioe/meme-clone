@@ -1,0 +1,26 @@
+/*@media only screen and (orientation: portrait){
+	.CTATTutor{
+		display: block;
+	}
+
+	.CTATTools{
+		margin-top: 50px;
+	}
+}*/
+
+.CTATTutor{
+	display: block;
+}
+
+.CTATTools{
+	margin-top: 40px;
+}
+
+/* Below is not working */
+textarea.CTAT--correct, input.CTAT--correct[type="text"] {
+  /*font-weight: bold;*/
+  color: darkgreen; /* limegreen is the original one */
+  /*text-shadow: 2px 2px 2px #303030;*/
+  /*box-shadow: none;*/
+}
+
